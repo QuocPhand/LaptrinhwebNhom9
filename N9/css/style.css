@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+
+/* Base */
+:root {
+    --clr-primary: rgb(255, 255, 255);
+    --clr-secondary: #272d36;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Times New Roman", serif; 
+}
+
+body {
+    background: rgb(189, 61, 61);
+    color: var(--clr-secondary);
+    overflow-x: hidden;
+}
+
+.section {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    /* 1140px */
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 28px auto;
+}
+
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.margin-right-md {
+    margin-bottom: 4.8rem !important;
+}
+
+strong {
+    font-weight: 500;
+}
+.btn {
+    padding: 14px 20px;
+    background: #ff1010;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    display: inline-block;
+    margin: 20px 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    font-size: 24px;
+}
+
+/* Menu */
+nav {
+    padding: 0 33px;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 22;
+}
+
+.menu-image {
+    margin-top: 5px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 200px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    position: relative;
+    font-size: 30px;
+    padding: 7px 15px;
+    text-decoration: none;
+    color: var(--clr-secondary);
+}
+nav ul li a ::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+nav ul li a  :hover ::before{
+    transform: scaleX(0);
+    transform-origin: lefft;
+}
+.menu a:hover {
+    transition: 0.3s;
+    color: #ff0000;
+}
+/*Menu end*/
+
+/* order */
+#order {
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(218, 218, 218);
+    border: 1px solid black;
+}
+
+.box {
+    background: rgb(255 227 226);
+    box-shadow: rgba(20, 51, 100, 0.438) 0px 7px 29px 0px;
+    padding: 25px 5px;
+    margin: 0 10px;
+    border-radius:20px;
+    font-size: 18px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.box a {
+    color: var(--clr-primary); /* Change color as needed */
+    text-decoration: none;
+}
+
+
+.box:hover {
+    transform: rotate(5deg);
+    background-color: #f0628857;
+}
+
+/* End order */
+
+/* Hero Section */
+#hero-section {
+    background: rgb(255 227 227);
+    padding-top: 100px;
+    padding-right: 500px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.text,
+.visual {
+    width: 50%;
+}
+
+.text {
+    margin: 20px;
+}
+
+.visual img {
+    display: block;
+    border-radius: 6%;
+    height: 400px;
+    width: 900px;
+    box-shadow: rgba(0, 0, 0, 0.438) 0px 7px 29px 0px;
+}
+
+#hero-section .text {
+    margin-left: 30px;
+}
+
+#hero-section .visual img {
+    margin-left: auto;
+}
+
+/* Footer */
+.footer {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 30px 0;
+    position: absolute;
+}
+
+.footer .container {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: rgb(149, 149, 149);
+    text-decoration: none;
+}
+
+.footer ul {
+    list-style: none;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.footer ul li {
+    cursor: pointer;
+}
+
+.footer-about {
+    width: 35%;
+}
+/*footer end*/
+label #btn,
+label cancel{
+    float: right;
+    line-height: 80px ;
+    margin-right: 40px;
+    align-content: right;
+    padding: auto;
+}
+.menu ul li a img {
+    height: 25px;
+    width: 25px;
+    transition: all 0.3s ease;
+}
+
+.menu ul li a img:hover {
+    filter: brightness(0.8); 
+    transform: scale(1.2); 
+}

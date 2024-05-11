@@ -1,0 +1,65 @@
+/* Info */
+
+#brand-section {
+    background: rgb(255, 227, 227);
+    width: 100%; 
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: justify; 
+}
+
+/* Center an Image */
+.center-image {
+    display: block;
+    margin: auto;
+    width: auto;
+}
+
+#brand-section h1 {
+    text-align: center; /* Centers the heading text */
+    font-weight: bold;
+    font-size: 50px;
+    padding: 30px;
+}
+
+#brand-section p {
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+#brand-section li {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-left: 50px;
+}
+
+.logo-image {
+    margin-top: 5px;
+    height: 70px;
+    border-radius: 50%; /* Retains circular logo shape */
+}
+.full .text{
+    align-self: center;
+    width: 80%;
+}
+.full .border{
+    background-color: white;
+    padding-left: 10px;
+    border-radius: 6%;
+}
+#brand-section .row img.col-sm-8 {
+    border-radius: 6%; 
+    width: fit-content; 
+    height: auto; 
+}
+#brand-section .row .col-sm-4{
+    font-style: italic;
+    text-align: justify;
+    justify-content: center;
+    text-justify: center;   
+    font-weight: bold;
+} 
